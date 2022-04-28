@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- linking stylesheet -->
+    <link rel="stylesheet" href="/dist/style.css" />
+
+    <!-- linking script -->
+    <script defer src="./app/js/script.js"></script>
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <div class="wrapper">
+      <div class="card" style="display: none;">
+        <div class="card__content">
+          <div class="icon-circle">
+            <img
+              class="card__icon"
+              src="images/icon-star.svg"
+              alt="star icon"
+            />
+          </div>
+          <h2 class="card__header">How did we do?</h2>
+          <p class="card__description">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+
+          <div class="card__ratings ">
+            <div class="card__rating icon-circle">1</div>
+            <div class="card__rating icon-circle">2</div>
+            <div class="card__rating icon-circle">3</div>
+            <div class="card__rating icon-circle">4</div>
+            <div class="card__rating icon-circle">5</div>
+          </div>
+
+          <button class="card__submit" type="submit">Submit</button>
+        </div>
+      </div>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div class="card">
+        <div class="card__content">
+          <img  src="./images/illustration-thank-you.svg" alt="thank you ">
+          <div class="semi-circle"> <span> You selected 4 out of 5 </span></div>
+
+          <h2 class="thanks__heading">Thank you!</h2>
+          <p class="thanks__description"> We appreciate you taking the time to give a rating. If
+            you ever need more support, don’t hesitate to get in touch!</p>
+
+        </div>
+      </div>
+
+    </div>
+
+    Submit
+
+    
+
+    <!-- Thank you state start -->
+
+    You selected
+    <!-- Add rating here -->
+    out of 5 Thank you!
+
+    <!-- Thank you state end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Mostafa Saeed</a>.
+    </div>
+  </body>
+</html>
