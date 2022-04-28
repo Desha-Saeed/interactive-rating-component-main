@@ -1,9 +1,11 @@
+@use '../utils' as *;
+
 .card {
     width: 416px;
     height: 412px;
     background-color: var(--Dark-Blue);
     border-radius: 30px;
-   
+    
     
     &__content {
         width: 100%;
@@ -102,11 +104,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 60%;
     height: 30px;
     border-radius: 55px;
     background-color: hsla(213, 19%, 28%);
     margin-top: 15px;
+
+    
 
 }
 .thanks__heading{
