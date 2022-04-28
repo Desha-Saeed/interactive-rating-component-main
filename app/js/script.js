@@ -1,7 +1,14 @@
 
 //Grabbing the elements
 const ratingEl = document.querySelectorAll('.card__rating');
-const submitEl = document.querySelector('card__submit');
+const submitEl = document.querySelector('.card__submit');
+const thanksCard = document.querySelector('.thanks');
+const ratingCard = document.querySelector('.card-rating');
+const ratings = document.querySelectorAll('.card__rating');
+const result = document.getElementById('result');
+
+
+
 
 
 
@@ -22,7 +29,17 @@ ratingEl.forEach(element => {
 
 submitEl.addEventListener('click', ()=>{
 
+    ratingCard.style.display ='none';
 
+    thanksCard.style.display = 'block';
+
+    ratings.forEach(rating => {
+        if(rating.classList.contains('active')){
+            result.innerHTML = `You Selected ${rating.innerHTML} out of 5`
+    
+        }
+        
+    });
 
 
 })
