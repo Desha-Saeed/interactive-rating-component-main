@@ -2,8 +2,8 @@
 //Grabbing the elements
 const ratingEl = document.querySelectorAll('.card__rating');
 const submitEl = document.querySelector('.card__submit');
-const thanksCard = document.querySelector('.thanks');
-const ratingCard = document.querySelector('.card-rating');
+const thanksCard = document.querySelector('.thanks-card');
+const ratingCard = document.querySelector('.rating-card');
 const ratings = document.querySelectorAll('.card__rating');
 const result = document.getElementById('result');
 
